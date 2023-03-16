@@ -3,10 +3,10 @@ import HeroSection from '../components/heroSection'
 import { useGlobalContext } from '../contextAPI/context'
 
 const Aboutus = () => {
-  const { updateAboutus,name,authName } = useGlobalContext()
+  const { updateAboutus  } = useGlobalContext()
   useEffect(() => {
     updateAboutus()
-  },[])
+  })
   return (
     <>
       <HeroSection />

@@ -8,8 +8,8 @@ const intialState = {
     services: [],
 };
 const API='https://course-api.com/react-useReducer-cart-project'
+
 const AppProvider = ({ children }) => {
-   
     const updateHome = () => {
         return dispatch({
             type: 'HOME_UPDATE',
@@ -51,7 +51,7 @@ const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, intialState)
     
     return(
-    <AppContext.Provider value={{...state,updateHome, updateAboutus,getServices}}>
+    <AppContext.Provider value={{...state, updateHome, updateAboutus, getServices}}>
         {children}
     </AppContext.Provider>
     )

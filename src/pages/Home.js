@@ -8,7 +8,7 @@ function Home() {
   const { updateHome } = useGlobalContext()
   useEffect(() => {
     updateHome()
-  },[])
+  })
   return (
     <>
       <HeroSection />

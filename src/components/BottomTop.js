@@ -4,9 +4,11 @@ import styled from 'styled-components';
 
 const BottomTop = () => {
     const[isVisible,setIsVisible]=useState(false)
+
     const goToTop = () => {
         window.scrollTo({top:0,left:0,behavior:'smooth'})
     }
+
     const listenToScroll = () => {
         let heightTohidden = 250;
         const winScrollPosition = document.body.scrollTop || document.documentElement.scrollTop;

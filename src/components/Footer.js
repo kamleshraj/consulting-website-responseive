@@ -23,7 +23,7 @@ const Footer = () => {
         <footer>
           <div className='container grid grid-four-column'>
             <div className="footer-about foot-item">
-              <h6>Thapa Technical</h6>
+              <h6>Consulting Website</h6>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
 

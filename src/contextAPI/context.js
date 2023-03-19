@@ -44,9 +44,10 @@ const AppProvider = ({ children }) => {
             console.log(error)
         }
     }
+    
     useEffect(() => {
-        getServices(API)
-    }, [])
+        getServices(API);
+      }, []);
 
     const [state, dispatch] = useReducer(reducer, intialState)
     

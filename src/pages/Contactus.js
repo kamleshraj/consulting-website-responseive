@@ -38,7 +38,10 @@ const Wrapper = styled.section`
       input,textarea{
         width:100%;
         padding:1rem;
-        margin-bottom:1rem
+        margin-bottom:1rem;
+        @media (max-width:${({ theme }) => theme.media.mobile}){
+          width:90%;
+        }
       }
   }
 }

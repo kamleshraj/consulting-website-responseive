@@ -7,6 +7,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing:'border-box';
     font-family: 'Work Sans', sans-serif;
 }
+html,body{
+  overflow-x:hidden
+}
 h1{
     color:${({ theme }) => theme.colors.heading};
     font-size:3rem;
@@ -62,5 +65,14 @@ a{ text-decoration: none}
       left: 0;
       right: 0;
     }
+}
+
+//mobile
+@media (max-width:${({ theme }) => theme.media.mobile}){
+  .container{padding:0 1rem}
+  .grid-two-column,.grid-three-column, .grid-four-card, .grid-four-column{
+    grid-template-columns:repeat(1, 1fr);
+    gap:1rem;
+  }
 }
 `;

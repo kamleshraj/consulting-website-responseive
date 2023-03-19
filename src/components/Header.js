@@ -20,7 +20,11 @@ const MainHeader = styled.header`
   display:flex;
   justify-content:space-between;
   align-items:center;
-  .logo{height:auto}
+  .logo{height:auto};
+
+  @media(max-width:${({ theme }) => theme.media.mobile}){
+    padding:.5rem 1rem;
+  }
 `;
 
 export default Header

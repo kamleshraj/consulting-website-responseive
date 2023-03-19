@@ -7,8 +7,8 @@ import Services from './Services';
 function Home() {
   const { updateHome } = useGlobalContext()
   useEffect(() => {
-    updateHome()
-  })
+    updateHome();
+  },[])
   return (
     <>
       <HeroSection />

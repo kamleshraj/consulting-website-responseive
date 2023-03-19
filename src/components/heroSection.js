@@ -12,11 +12,11 @@ const HeroSection = () => {
             <div className='section-hero-data'>
                   <p className='hero-top-data'>This is me</p>
                   <h1 className='hero-heading'>{name}</h1> 
-            <p className='hero-para'>{authName} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quaerat nemo eum unde harum deleniti illo, in ducimus excepturi minima enim harum quisquam.</p>  
+                  <p className='hero-para'>{authName} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quaerat nemo eum unde harum deleniti illo, in ducimus excepturi minima enim harum quisquam.</p>  
                   <ButtonTheme>
                     <NavLink to="/contactus"> hire me </NavLink>
                   </ButtonTheme>
-              </div>
+            </div>
               <div className='section-hero-banner'>
                 <img src={image} alt='hero banner' className='hero-banner'/>
             </div>  
@@ -43,6 +43,13 @@ const Wrapper = styled.section`
     justify-self: center;
     img.hero-banner {max-width: 315px;}
   }
+
+  @media (max-width:${({ theme }) => theme.media.mobile}){
+  .section-hero-data{
+    width:auto;
+    text-align:center;
+  }
+}
 `;
 
 export default HeroSection

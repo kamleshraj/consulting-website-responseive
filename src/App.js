@@ -25,7 +25,7 @@ function App() {
       gradient: 'linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%)',
       shadow:'10px 0px 15px #4e4e4eb0'
     },
-    responsive:{mobile:'768px', tab:'998px'}
+    media:{mobile:'768px', tab:'998px'}
 }
   return (
     <>

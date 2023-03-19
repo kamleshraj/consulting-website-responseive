@@ -4,9 +4,7 @@ import { useGlobalContext } from '../contextAPI/context'
 
 const Aboutus = () => {
   const { updateAboutus  } = useGlobalContext()
-  useEffect(() => {
-    updateAboutus()
-  })
+
   return (
     <>
       <HeroSection />

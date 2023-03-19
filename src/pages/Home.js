@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react'
+import React,{useEffect} from 'react'
 import { useGlobalContext } from '../contextAPI/context';
 import HeroSection from './../components/heroSection';
 import Contactus from './Contactus';
 import Services from './Services';
 
-function Home() {
+const Home=()=> {
   const { updateHome } = useGlobalContext()
-  useEffect(() => {
-    updateHome();
-  },[])
+  useEffect(() => updateHome(), [])
+  // useMemo(()=>updateHome(),[])
   return (
     <>
       <HeroSection />

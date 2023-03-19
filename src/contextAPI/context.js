@@ -47,6 +47,8 @@ const AppProvider = ({ children }) => {
     
     useEffect(() => {
         getServices(API);
+        updateHome();
+        updateAboutus();
       }, []);
 
     const [state, dispatch] = useReducer(reducer, intialState)

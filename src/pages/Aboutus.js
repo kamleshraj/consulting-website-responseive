@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import HeroSection from '../components/heroSection'
-import { useGlobalContext } from '../contextAPI/context'
+//import { useGlobalContext } from '../contextAPI/context'
 
 const Aboutus = () => {
-  const { updateAboutus  } = useGlobalContext()
-
+  // const { updateAboutus  } = useGlobalContext()
+  // useEffect(() => updateAboutus(), [])
   return (
     <>
       <HeroSection />
